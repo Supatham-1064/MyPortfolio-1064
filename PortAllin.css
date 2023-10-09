@@ -1,0 +1,203 @@
+/* ------------------grid-container------------ */
+.grid-container {
+	display: grid;
+    grid-template-columns: 1fr 2.5fr 1.5fr; 
+    grid-template-rows: auto 540px auto;	 
+}
+.grid-container > div{
+    border: 8px solid #FFEFD7;
+    font-size: 20px;
+    text-align:center;
+    background-color: #0A76B6;
+    color: white;
+}
+#header{
+	grid-column: 1 / span 3;
+    background-color: #0A76B6;
+}
+#main1{
+	grid-column: 1 / span 2;
+    
+}
+
+#main1 > div{
+    text-align: left;
+    padding-left: 60px;	
+   
+}
+#right{
+	grid-column: 3 / span 1;
+   
+    
+}
+#footer{
+	grid-column: 1 / span 3;
+    
+  
+    font-size: 30px;
+}
+.Flex_Container{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute; 
+    bottom: 0; right: 0;
+    width: 25%;  
+    
+}
+  
+
+
+
+/* ------------------Setting------------ */
+
+html{
+    background-color: #FFEFD7;
+    font-family: cursive;    
+}
+h1{
+    background-color: #EF9916;   
+    text-shadow: 3.5px 1px #0D136F;
+    font-size: 40px;
+}
+#Link{
+    font-size: 38px;
+}
+
+h3{
+    background-color: #EF9916;    
+    text-decoration: underline;
+    text-shadow: 3.5px 1px #0D136F;
+    font-size: 25px;
+}
+
+
+li{
+    text-align: left;
+    margin-left: 20px;
+    
+}
+
+#Suptham_pic{  
+    text-align: center; 
+    width :35%;
+    border : 5px dotted black;
+    border-radius: 80px;
+    vertical-align: center;
+}
+img.icon{
+    width: 15%;  
+}
+
+p.Link{
+    padding-left: 30px;
+    word-spacing: 70px;
+    background-color: #EF9916;
+    text-shadow: 3.5px 1px #0D136F;
+    
+   
+}
+p.contag{
+    font-size: 20px;
+    
+}
+
+
+
+a:link{
+	color: #FFBD59 ; 
+}  
+
+a:visited{
+	color: white;
+} 
+
+ a:hover{ 
+	color: #f2870e; 
+} 
+
+/* ------------------My-project------------ */
+#headerPj{
+	grid-column: 1 / span 3;
+}
+#mainPj{
+    position: relative;
+	grid-column: 1 / span 3;
+    padding-left: 60px;	
+    text-align: left;
+}
+
+#footerPj{
+	grid-column: 1 / span 3;
+    
+    font-size: 30px;
+   
+}
+
+
+
+/* ------------------My-Assignment------------ */
+#headerAs{
+	grid-column: 1 / span 3;
+}
+#mainAs{
+    position: relative;
+	grid-column: 1 / span 3;
+    text-align:left;
+    padding-left: 60px;	
+}
+
+
+#footerAs{
+	grid-column: 1 / span 3;
+    
+    font-size: 30px;
+   
+}
+
+
+@media only screen and (max-width: 780px) {
+	.grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;	
+        
+    }
+    #header{
+        grid-column: 1 / span 1;
+    }
+    
+    #main1{
+        grid-column: 1 / span 1;
+    }
+    #right{
+        grid-column: 1 / span 1;
+    }
+    #footer{
+        grid-column: 1 / span 1;
+        font-size: 25px;
+       
+    }
+    
+
+}
+@media only screen and (max-width: 550px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 500px auto;	
+        
+    }
+    #headerPj{ grid-column: 1 / span 1;}
+    #mainPj{ grid-column: 1 / span 1;}
+    #footerPj{ grid-column: 1 / span 1; font-size: 25px;}
+
+    #headerAs{ grid-column: 1 / span 1;}
+    #mainAs{ grid-column: 1 / span 1;}
+    #footerAs{ grid-column: 1 / span 1; font-size: 25px;}
+    h2{
+        font-size: 29px;
+    }
+
+
+
+}

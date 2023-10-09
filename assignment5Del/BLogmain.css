@@ -1,0 +1,48 @@
+.grid-container {
+	display: grid;
+    grid-template-columns: 1fr 2fr 2fr; 
+    grid-template-rows: auto 550px auto;	
+    grid-gap: 10px;
+}
+
+.grid-container > div{
+    border: 3px solid rgb(8, 4, 21);
+    font-size: 20px;
+    text-align:center;
+    background-color:rgb(120, 224, 247);
+    
+}
+
+#header{
+	grid-column: 1 / span 3;
+	
+}
+#main1{
+	grid-column: 1 / span 2;
+}
+
+#main1 > div{
+    text-align: left;
+    padding-left: 60px;	
+}
+#right{
+	grid-column: 3 / span 1;
+    text-align: center;
+    padding-left: 60px;	
+
+}
+#right > img{
+	
+    text-align: center;
+    padding-top: 90px;	
+
+}
+
+#footer{
+	grid-column: 1 / span 3;
+    text-align: right;
+    padding-right: 40px;	
+}
+
+
+
